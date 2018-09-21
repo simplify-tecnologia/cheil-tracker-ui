@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "@babel/react",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["styled-components"],
+    ["transform-class-properties"],
+    ["transform-object-rest-spread"],
+    ["lodash"],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "cheil-tracker-ui": "./src"
+        }
+      }
+    ]
+  ]
+}
