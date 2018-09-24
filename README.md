@@ -18,7 +18,7 @@ https://
 
 ## Components List
 
-- [ ] Box
+- [x] Box
 - [ ] Button
 - [ ] Checkbox
 - [ ] ChildrenProps
@@ -32,7 +32,6 @@ https://
 - [ ] Menu
 - [ ] Stack
 - [ ] Switch
-- [ ] Text
+- [x] Text
 - [ ] Textarea
-- [ ] Title
-- [ ] YesNo
+- [x] Title
