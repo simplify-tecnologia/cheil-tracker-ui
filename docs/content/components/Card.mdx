@@ -1,0 +1,28 @@
+---
+name: Card
+route: /components/card
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Card, ChildrenProps } from '../../../src/components';
+
+# Card
+
+## Properties
+
+<PropsTable of={Card} />
+
+## Basic usage
+
+A card to contain other elements
+
+<Playground>
+  <ChildrenProps mb={3}>
+    <Card bg='blue' color='white' border={0}>Some text in card</Card>
+    <Card bg='red' color='white' border={0}>Some text in card</Card>
+    <Card variant='blue' color='info'>Small Card with some text in card</Card>
+    <Card variant='turquoise' boxShadow="large">Turquoise color in card</Card>
+    <Card variant='yellow'>Yellow color in card</Card>
+    <Card variant='red' >Red color in card</Card>
+  </ChildrenProps>
+</Playground>

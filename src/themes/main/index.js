@@ -91,9 +91,41 @@ theme.sizes = {
 
 theme.borderRadius = 4;
 
-theme.boxShadow = {
+theme.shadows = {
   normal: `0 0 5px 0 ${rgba(black, 0.4)}`,
   large: `0 0 15px 0 ${rgba(black, 0.15)}, 0 4px 20px 0 ${rgba(black, 0.25)}`,
+};
+
+theme.components = {};
+theme.components.card = {
+  pink: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'pink',
+  },
+  purple: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'purple',
+  },
+  blue: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'blue',
+  },
+  turquoise: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'turquoise',
+  },
+  green: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'green',
+  },
+  yellow: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'yellow',
+  },
+  red: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'red',
+  },
 };
 
 export default theme;
