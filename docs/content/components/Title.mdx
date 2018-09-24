@@ -1,0 +1,41 @@
+---
+name: Title
+route: /components/title
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Title } from '../../../src/components';
+
+# Title
+
+A Title can be have different `sizes` and be `strong` or `thin`:
+
+## Properties
+
+<PropsTable of={Title} />
+
+## Basic usage
+
+<Playground>
+  <Title>Title Normal</Title>
+  <Title thin>Thin Title Normal</Title>
+  <Title strong>Strong Title Normal</Title>
+</Playground>
+
+A Title can be render as Subtitle and be centered:
+
+<Playground>
+  <Title strong color='danger' textAlign='center'>Super Centered Title</Title>
+  <Title subtitle color='info' textAlign='center'>This is a super subtitle</Title>
+</Playground>
+
+A Title can have different colors:
+
+<Playground>
+  <Title color='primary'>Title Primary</Title>
+  <Title color='success'>Title Success</Title>
+  <Title color='danger'>Title Danger</Title>
+  <Title color='purple'>Title Purple</Title>
+  <Title color='gray'>Title Grey</Title>
+</Playground>
