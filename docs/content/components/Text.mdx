@@ -1,0 +1,50 @@
+---
+name: Text
+route: /components/text
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Text } from '../../../src/components';
+
+# Text
+
+## Properties
+
+<PropsTable of={Text} />
+
+## Basic usage
+
+<Playground>
+  <Text>This is a normal text.</Text>
+  <Text thin>This is a thin text.</Text>
+  <Text strong>This is a strong text.</Text>
+</Playground>
+
+## Using different color
+
+<Playground>
+  <Text color='primary'>Text with primary color</Text>
+  <Text color='success'>Text with success color</Text>
+  <Text color='danger'>Text with danger color</Text>
+</Playground>
+
+## Using different fontFamily
+
+<Playground>
+  <Text fontFamily='monospace'>Mono space text.</Text>
+  <Text fontFamily='monospace' strong>Mono space text.</Text>
+</Playground>
+
+## Using different fontSize
+
+<Playground>
+  <Text fontSize={0}>Text with small size</Text>
+  <Text fontSize={4}>Text with large size</Text>
+</Playground>
+
+## Using different tag
+
+<Playground>
+  <Text as='span'>Text as span tag</Text>
+</Playground>
