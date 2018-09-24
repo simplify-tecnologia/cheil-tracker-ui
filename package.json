@@ -44,6 +44,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "del-cli": "^1.1.0",
     "docz": "^0.11.2",
+    "docz-plugin-netlify": "^1.1.4",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",

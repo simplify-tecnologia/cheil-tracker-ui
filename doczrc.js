@@ -1,8 +1,11 @@
+import doczPluginNetlify from 'docz-plugin-netlify'; // eslint-disable-line import/no-extraneous-dependencies
+
 import { main as theme } from './src/themes';
 
 export default {
   title: 'Cheil Tracker UI',
   src: './docs/',
+  plugins: [doczPluginNetlify()],
   themeConfig: {
     colors: {
       white: theme.colors.white,
