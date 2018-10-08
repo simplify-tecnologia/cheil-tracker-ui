@@ -6,6 +6,7 @@ export default {
   title: 'Cheil Tracker UI',
   src: './docs/',
   plugins: [doczPluginNetlify()],
+  indexHtml: 'docs/index.html',
   themeConfig: {
     colors: {
       white: theme.colors.white,
