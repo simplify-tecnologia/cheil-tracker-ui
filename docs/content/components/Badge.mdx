@@ -1,0 +1,23 @@
+---
+name: Badge
+route: /components/badge
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Badge, ChildrenProps } from '../../../src/components';
+
+# Badge
+
+## Properties
+
+<PropsTable of={Badge} />
+
+## Basic usage
+
+<Playground>
+  <ChildrenProps mr={3}>
+    <Badge>Badge</Badge>
+    <Badge bg="danger">Badge</Badge>
+    <Badge bg="success">Badge</Badge>
+  </ChildrenProps>
+</Playground>
