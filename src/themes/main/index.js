@@ -128,4 +128,6 @@ theme.components.card = {
   },
 };
 
+theme.components.icon = {};
+
 export default theme;

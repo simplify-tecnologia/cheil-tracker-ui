@@ -4,6 +4,7 @@ import {
   borders as borderSize,
   alignItems,
   alignContent,
+  color,
   justifyContent,
   flexWrap,
   flexBasis,
@@ -105,10 +106,22 @@ export const borders = compose(
   borderColor
 );
 
-export const themeColor = style({
+export const textTheme = style({
   prop: 'color',
   key: 'themeColors',
 });
+
+export const bgTheme = style({
+  prop: 'bg',
+  cssProperty: 'backgroundColor',
+  key: 'themeColors',
+});
+
+export const themeColor = compose(
+  color,
+  textTheme,
+  bgTheme
+);
 
 export const removeMarginProps = props => {
   const { m, mt, mb, ml, mr, mx, my, ...rest } = props;

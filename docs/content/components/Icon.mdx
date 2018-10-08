@@ -1,0 +1,47 @@
+---
+name: Icon
+route: /components/icon
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Icon } from '../../../src/components';
+
+Simple usage:
+
+<Playground>
+  <Icon name='star' color='primary' />
+  <Icon name='star' color='success' />
+  <Icon name='star' color='black' />
+  <Icon name='star' color='gray' />
+  <Icon name='star' color='danger' />
+</Playground>
+
+
+Icon with color inverted:
+
+<Playground>
+  <Icon name='star' color='black' inverted />
+  <Icon name='star' color='gray' inverted />
+  <Icon name='github' color='primary'inverted />
+  <Icon name='gift' color='success' inverted />
+  <Icon name='bug' color='danger' fontSize={5} inverted />
+</Playground>
+
+Round inverted icons:
+
+<Playground>
+  <Icon name='star' color='black' inverted circular />
+  <Icon name='star' color='gray' inverted circular/>
+  <Icon name='github' color='primary'inverted circular/>
+  <Icon name='gift' color='success' inverted circular/>
+  <Icon name='bug' color='danger' fontSize={5} inverted circular />
+</Playground>
+
+Type icons:
+
+<Playground>
+  <Icon name='star' type="solid" color='primary' />
+  <Icon name='star' type="regular" color='primary' />
+  <Icon name='star' type="light" color='primary' />
+  <Icon name='aws' type="brands" color='primary' />
+</Playground>
