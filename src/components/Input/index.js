@@ -75,7 +75,7 @@ class Input extends React.Component {
   };
 
   render() {
-    const { className, ...props } = this.props;
+    const { onEnter, className, ...props } = this.props;
     const cn = cx(`input`, className);
     let InputIcon = null;
 
