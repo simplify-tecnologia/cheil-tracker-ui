@@ -77,27 +77,19 @@ theme.fonts = {
 };
 
 /** All sizes are in pixels */
-theme.sizes = {
-  fontSizes: {
-    tiny: 13,
-    small: 14,
-    normal: 16,
-    medium: 18,
-    large: 24,
-    xLarge: 30,
-    huge: 36,
-  },
-};
+theme.radii = [0, 2, 4];
 
-theme.fontSizes = [
-  theme.sizes.fontSizes.tiny,
-  theme.sizes.fontSizes.small,
-  theme.sizes.fontSizes.normal,
-  theme.sizes.fontSizes.medium,
-  theme.sizes.fontSizes.large,
-  theme.sizes.fontSizes.xLarge,
-  theme.sizes.fontSizes.huge,
-];
+theme.space = [0, 4, 8, 16, 24, 32, 40, 48, 64, 128, 256, 512];
+
+theme.fontSizes = {
+  tiny: 13,
+  small: 14,
+  normal: 16,
+  medium: 18,
+  large: 24,
+  xLarge: 30,
+  huge: 36,
+};
 
 /**
  * Components
@@ -105,12 +97,10 @@ theme.fontSizes = [
 
 theme.borderRadius = 4;
 
-theme.shadow = {
+theme.shadows = {
   normal: `0 0 5px 0 ${rgba(black, 0.4)}`,
   large: `0 0 15px 0 ${rgba(black, 0.15)}, 0 4px 20px 0 ${rgba(black, 0.25)}`,
 };
-
-theme.shadows = [theme.shadow.normal, theme.shadow.large];
 
 theme.components = {};
 theme.components.card = {
@@ -154,7 +144,7 @@ theme.components.button = {
     color: 'gray',
     borderColor: 'secondary',
     bg: 'secondary',
-    boxShadow: 0,
+    boxShadow: 'normal',
   },
   success: {
     color: 'white',
