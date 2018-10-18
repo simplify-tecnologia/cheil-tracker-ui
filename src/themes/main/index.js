@@ -173,21 +173,17 @@ theme.components.input = {
     color: 'white',
     bg: 'primary',
     borderColor: 'primary',
-    fontWeight: 300,
     placeholderColor: 'rgba(255,255,255, 0.4)',
   },
   secondary: {
-    color: 'grayDark',
     bg: 'secondary',
     borderColor: 'secondary',
-    fontWeight: 300,
-    placeholderColor: rgba(grayDark, 0.8),
+    boxShadow: 'normal',
   },
   success: {
     color: 'white',
     bg: 'success',
     borderColor: 'success',
-    fontWeight: 300,
     placeholderColor: 'rgba(255,255,255, 0.4)',
   },
   danger: {

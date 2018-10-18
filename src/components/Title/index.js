@@ -13,7 +13,7 @@ class Title extends React.Component {
     as: 'h3',
     color: null,
     fontFamily: 'primary',
-    fontSize: 4,
+    fontSize: 'large',
     textAlign: 'left',
     thin: false,
     strong: false,
@@ -27,14 +27,12 @@ class Title extends React.Component {
      * **Enum**: `primary`, `secondary`, `success`, `danger`, `white`, `black`, `grey`, `#FF0000`, ...
      */
     color: PropTypes.string,
-    fontFamily: PropTypes.string,
-    fontSize: PropTypes.number,
-    /** A title can be aligned. */
-    textAlign: PropTypes.string,
     /** A title can have its font as thin */
     thin: PropTypes.bool,
     /** A title can have its font as strong */
     strong: PropTypes.bool,
+    /** A title can be aligned. */
+    textAlign: PropTypes.string,
   };
 
   render() {

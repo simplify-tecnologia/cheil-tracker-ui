@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
-import { rgba } from 'polished';
-import { themeColor } from 'cheil-tracker-ui/utils';
-import { size, fontSize, themeGet } from 'styled-system';
+import { color, size, fontSize } from 'styled-system';
 
 const circular = p => {
   if (!p.circular) return;
@@ -19,7 +17,7 @@ export const StyledIcon = styled.i.attrs({
   align-items: center;
   box-sizing: border-box;
   line-height: 1.5;
-  ${themeColor}
+  ${color}
   ${size}
   ${fontSize}
   ${circular}

@@ -6,13 +6,19 @@ menu: Components
 import { Playground, PropsTable } from 'docz';
 import { Icon } from '../../../src/components';
 
-Simple usage:
+# Icon
+
+## Properties
+
+<PropsTable of={Icon} />
+
+## Basic usage
 
 <Playground>
   <Icon name='star' color='primary' />
-  <Icon name='star' color='success' />
-  <Icon name='star' color='black' />
   <Icon name='star' color='gray' />
+  <Icon name='star' color='success' />
+  <Icon name='star' color='blue' />
   <Icon name='star' color='danger' />
 </Playground>
 
@@ -22,9 +28,9 @@ Icon with color inverted:
 <Playground>
   <Icon name='star' color='black' inverted />
   <Icon name='star' color='gray' inverted />
-  <Icon name='github' color='primary'inverted />
+  <Icon name='github' color='blue'inverted />
   <Icon name='gift' color='success' inverted />
-  <Icon name='bug' color='danger' fontSize={5} inverted />
+  <Icon name='bug' color='danger' fontSize='xLarge' inverted />
 </Playground>
 
 Round inverted icons:
@@ -32,9 +38,9 @@ Round inverted icons:
 <Playground>
   <Icon name='star' color='black' inverted circular />
   <Icon name='star' color='gray' inverted circular/>
-  <Icon name='github' color='primary'inverted circular/>
+  <Icon name='github' color='blue'inverted circular/>
   <Icon name='gift' color='success' inverted circular/>
-  <Icon name='bug' color='danger' fontSize={5} inverted circular />
+  <Icon name='bug' color='danger' fontSize='xLarge' inverted circular />
 </Playground>
 
 Type icons:

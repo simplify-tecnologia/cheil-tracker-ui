@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { themeColor } from 'cheil-tracker-ui/utils';
 import { fontFamily, fontSize, space, color, textAlign, display } from 'styled-system';
 
 export const StyledTitle = styled.div`
@@ -24,7 +23,6 @@ export const StyledTitle = styled.div`
   ${fontSize}
   ${space}
   ${color}
-  ${themeColor}
   ${textAlign}
   ${display}
 `;

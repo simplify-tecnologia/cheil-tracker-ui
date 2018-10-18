@@ -23,8 +23,8 @@ class Button extends React.Component {
     boxShadow: null,
     fontFamily: 'primary',
     fontWeight: 400,
-    fontSize: 'tiny',
-    height: '2.461em',
+    fontSize: 'small',
+    height: '2.285em',
     variant: null,
     loading: false,
     disabled: false,
@@ -33,6 +33,7 @@ class Button extends React.Component {
     icon: null,
     iconPosition: 'left',
     static: false,
+    href: null,
   };
 
   static propTypes = {

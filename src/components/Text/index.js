@@ -20,19 +20,17 @@ class Text extends React.Component {
   };
 
   static propTypes = {
-    /** Render text as `p`, `span` */
-    as: PropTypes.string,
     /**
      * A text can have different colors. <br/>
      * **Enum**: `primary`, `secondary`, `success`, `danger`, `white`, `black`, `grey`, `#FF0000`, ...
      */
     color: PropTypes.string,
-    fontFamily: PropTypes.string,
-    textAlign: PropTypes.string,
     /** A text can have its font as thin */
     thin: PropTypes.bool,
     /** A text can have its font as strong */
     strong: PropTypes.bool,
+    /** A text can be aligned. */
+    textAlign: PropTypes.string,
   };
 
   render() {
