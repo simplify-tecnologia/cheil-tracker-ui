@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { themeColor } from 'cheil-tracker-ui/utils';
-import { space, fontFamily } from 'styled-system';
+import { color, space, fontFamily } from 'styled-system';
 
 export const StyledBadge = styled.span`
   cursor: default;
@@ -14,5 +13,5 @@ export const StyledBadge = styled.span`
 
   ${space};
   ${fontFamily};
-  ${themeColor};
+  ${color};
 `;

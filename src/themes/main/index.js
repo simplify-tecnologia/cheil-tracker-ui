@@ -29,7 +29,31 @@ const green = '#9bdb4f';
 const yellow = '#ffc214';
 const red = '#f26d35';
 
+const primary = grayDark;
+const secondary = white;
+const success = green;
+const info = blue;
+const warning = yellow;
+const danger = red;
+const light = grays.g500;
+const dark = grayDark;
+
+const themeColors = {
+  primary,
+  secondary,
+  success,
+  info,
+  warning,
+  danger,
+  light,
+  dark,
+};
+
+theme.themeColors = themeColors;
+
 theme.colors = {
+  ...theme.themeColors,
+  ...grays,
   pink,
   purple,
   blue,
@@ -43,26 +67,6 @@ theme.colors = {
   grayDark,
 };
 
-const primary = grayDark;
-const secondary = white;
-const success = green;
-const info = blue;
-const warning = yellow;
-const danger = red;
-const light = grays.g500;
-const dark = grayDark;
-
-theme.themeColors = {
-  primary,
-  secondary,
-  success,
-  info,
-  warning,
-  danger,
-  light,
-  dark,
-};
-
 /**
  * Fonts
  */
@@ -74,7 +78,7 @@ theme.fonts = {
 
 /** All sizes are in pixels */
 theme.sizes = {
-  fontSize: {
+  fontSizes: {
     tiny: 13,
     small: 14,
     normal: 16,
@@ -85,16 +89,28 @@ theme.sizes = {
   },
 };
 
+theme.fontSizes = [
+  theme.sizes.fontSizes.tiny,
+  theme.sizes.fontSizes.small,
+  theme.sizes.fontSizes.normal,
+  theme.sizes.fontSizes.medium,
+  theme.sizes.fontSizes.large,
+  theme.sizes.fontSizes.xLarge,
+  theme.sizes.fontSizes.huge,
+];
+
 /**
  * Components
  */
 
 theme.borderRadius = 4;
 
-theme.shadows = {
+theme.shadow = {
   normal: `0 0 5px 0 ${rgba(black, 0.4)}`,
   large: `0 0 15px 0 ${rgba(black, 0.15)}, 0 4px 20px 0 ${rgba(black, 0.25)}`,
 };
+
+theme.shadows = [theme.shadow.normal, theme.shadow.large];
 
 theme.components = {};
 theme.components.card = {
