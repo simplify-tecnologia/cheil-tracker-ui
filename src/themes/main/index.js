@@ -144,6 +144,40 @@ theme.components.card = {
   },
 };
 
+theme.components.button = {
+  primary: {
+    color: 'white',
+    borderColor: 'primary',
+    bg: 'primary',
+  },
+  secondary: {
+    color: 'gray',
+    borderColor: 'secondary',
+    bg: 'secondary',
+    boxShadow: 0,
+  },
+  success: {
+    color: 'white',
+    borderColor: 'success',
+    bg: 'success',
+  },
+  danger: {
+    color: 'white',
+    borderColor: 'danger',
+    bg: 'danger',
+  },
+  blue: {
+    color: 'white',
+    borderColor: 'blue',
+    bg: 'blue',
+  },
+  turquoise: {
+    color: 'white',
+    borderColor: 'turquoise',
+    bg: 'turquoise',
+  },
+};
+
 theme.components.icon = {};
 
 export default theme;

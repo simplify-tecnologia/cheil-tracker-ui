@@ -1,0 +1,60 @@
+---
+name: Button
+route: /components/button
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Button, ChildrenProps } from '../../../src/components';
+
+# Button
+
+## Properties
+
+<PropsTable of={Button} />
+
+## Basic usage
+
+<Playground>
+  <ChildrenProps mr={1} mb={1}>
+    <Button>Normal</Button>
+    <Button variant='primary'>Primary</Button>
+    <Button variant='secondary'>Secondary</Button>
+    <Button variant='success'>Success</Button>
+    <Button variant='danger'>Danger</Button>
+    <Button variant='blue'>Blue</Button>
+    <Button color='white' bg='turquoise' borderColor='turquoise'>Turquoise</Button>
+  </ChildrenProps>
+</Playground>
+
+## Custom Button
+
+<Playground>
+  <ChildrenProps mr={1} mb={1}>
+    <Button color='white' border={2} bg='gray' borderColor='gray'>Custom</Button>
+    <Button color='white' borderRadius={0} bg='yellow'>Custom</Button>
+  </ChildrenProps>
+</Playground>
+
+## Button `outlined`
+
+<Playground>
+  <ChildrenProps mr={1} mb={1}>
+    <Button variant='success' outlined>Success</Button>
+    <Button variant='danger' outlined>Danger</Button>
+    <Button variant='grey' outlined>Grayscale</Button>
+    <Button color='white' bg='black' outlined>Black</Button>
+  </ChildrenProps>
+</Playground>
+
+## Button `loading`
+
+<Playground>
+  <ChildrenProps mr={1} mb={1}>
+    <Button loading>Normal</Button>
+    <Button variant='primary' loading>Primary</Button>
+    <Button variant='success' loading>Success</Button>
+    <Button variant='danger' loading>Danger</Button>
+    <Button bg='gray' color='white' loading>Grayscale</Button>
+    <Button bg='black' color='white' loading>Black</Button>
+  </ChildrenProps>
+</Playground>
