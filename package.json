@@ -2,6 +2,7 @@
   "name": "cheil-tracker-ui",
   "version": "0.0.1",
   "main": "lib/index.js",
+  "private": true,
   "scripts": {
     "prepare": "npm run build",
     "build": "babel src --out-dir lib",
