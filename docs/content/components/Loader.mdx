@@ -1,0 +1,35 @@
+---
+name: Loader
+route: /components/loader
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Loader, Card, ChildrenProps } from '../../../src/components';
+
+# Loader
+
+## Properties
+
+<PropsTable of={Loader} />
+
+## Basic usage
+
+A loader can have multiple colors and sizes:
+
+<Playground>
+  <ChildrenProps mr={2}>
+    <Loader />
+    <Loader color='danger' />
+    <Loader color='#FFF000' fontSize={24} />
+  </ChildrenProps>
+</Playground>
+
+<Playground>
+  <Loader color='blue'>Loading...</Loader>
+</Playground>
+
+<Playground>
+  <Card bg='success' borderColor='success'>
+    <Loader color='white' vertical>Loading...</Loader>
+  </Card>
+</Playground>
