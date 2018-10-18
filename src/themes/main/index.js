@@ -168,6 +168,37 @@ theme.components.button = {
   },
 };
 
+theme.components.input = {
+  primary: {
+    color: 'white',
+    bg: 'primary',
+    borderColor: 'primary',
+    fontWeight: 300,
+    placeholderColor: 'rgba(255,255,255, 0.4)',
+  },
+  secondary: {
+    color: 'grayDark',
+    bg: 'secondary',
+    borderColor: 'secondary',
+    fontWeight: 300,
+    placeholderColor: rgba(grayDark, 0.8),
+  },
+  success: {
+    color: 'white',
+    bg: 'success',
+    borderColor: 'success',
+    fontWeight: 300,
+    placeholderColor: 'rgba(255,255,255, 0.4)',
+  },
+  danger: {
+    color: 'white',
+    bg: 'danger',
+    borderColor: 'danger',
+    fontWeight: 300,
+    placeholderColor: 'rgba(255,255,255, 0.4)',
+  },
+};
+
 theme.components.icon = {};
 
 export default theme;

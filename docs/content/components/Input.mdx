@@ -1,0 +1,40 @@
+---
+name: Input
+route: /components/input
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Input, Card, ChildrenProps } from '../../../src/components';
+
+# Input
+
+## Properties
+
+<PropsTable of={Input} />
+
+## Basic usage
+
+Simple Input with different type:
+
+<Playground>
+  <ChildrenProps my={2}>
+    <Input placeholder='Type your name' />
+    <Input placeholder='Type your password' type='password' />
+  </ChildrenProps>
+</Playground>
+
+Imput with different size, color & icon:
+
+<Playground>
+  <ChildrenProps my={2}>
+    <Input placeholder='Type your name' size='small' />
+    <Input icon='search' placeholder='Search for tags...' />
+    <Input icon='star' color='primary' borderColor='primary' placeholder='Search for stars...' />
+    <Input icon='address-card' color='danger' placeholderColor='dangerLight' borderColor='danger' placeholder='Search for person...' />
+    <Input icon='star' variant='primary' fontSize='medium' placeholder='Search for stars...' />
+
+    <Card bg='info' borderColor='info'>
+      <Input icon='jedi' variant='secondary' placeholder='Search in The Force...' />
+    </Card>
+  </ChildrenProps>
+</Playground>
