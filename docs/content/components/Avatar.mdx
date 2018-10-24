@@ -1,0 +1,25 @@
+---
+name: Avatar
+route: /components/avatar
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Avatar, ChildrenProps } from '../../../src/components';
+
+# Avatar
+
+## Properties
+
+<PropsTable of={Avatar} />
+
+## Basic usage
+
+A Avatar to contain other elements
+
+<Playground>
+  <ChildrenProps mx={2}>
+  <Avatar />
+  <Avatar name="Willard Adam" size={64} bg="danger"/>
+  <Avatar name="Ellisha Huang" bg="green" />
+  </ChildrenProps>
+</Playground>
