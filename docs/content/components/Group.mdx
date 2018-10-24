@@ -1,0 +1,62 @@
+---
+name: Group
+route: /components/group
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Button, Group, ChildrenProps } from '../../../src/components';
+
+# Group
+
+## Properties
+
+<PropsTable of={Group} />
+
+## Basic usage
+
+<Playground>
+  <Group variant='primary' outlined>
+    <Button icon='star'>Left</Button>
+    <Button>Middle</Button>
+    <Button>Right</Button>
+  </Group>
+</Playground>
+
+Group buttons `vertical`:
+
+<Playground>
+  <Group vertical>
+    <Button variant='success'>Left</Button>
+    <Button variant='gray'>Middle</Button>
+    <Button variant='gray'>Second</Button>
+    <Button variant='success'>Right</Button>
+  </Group>
+</Playground>
+
+Group `Button` and `Button` with icon:
+
+<Playground>
+  <Group>
+    <Button variant='danger'>I am star</Button>
+    <Button bg='#f05c1d' color='white' borderColor='#f05c1d' icon='star' />
+  </Group>
+</Playground>
+
+Creat tags:
+
+<Playground>
+  <ChildrenProps mr={1} fontSize='tiny'>
+    <Group>
+      <Button variant='primary'>npm</Button>
+      <Button variant='blue'>v1.0.0</Button>
+    </Group>
+    <Group>
+      <Button variant='primary'>build</Button>
+      <Button variant='success'>passed</Button>
+    </Group>
+    <Group>
+      <Button static variant='blue'>javascript</Button>
+      <Button bg='light' borderColor='light' color='white' icon='times' />
+    </Group>
+  </ChildrenProps>
+</Playground>

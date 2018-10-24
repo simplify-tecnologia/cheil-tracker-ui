@@ -4,6 +4,7 @@ export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as ChildrenProps } from './ChildrenProps';
 export { default as Flex } from './Flex';
+export { default as Group } from './Group';
 export { default as Icon } from './Icon';
 export { default as Input } from './Input';
 export { default as Loader } from './Loader';
