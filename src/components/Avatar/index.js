@@ -10,7 +10,7 @@ class Avatar extends React.Component {
   static displayName = 'Avatar';
 
   static defaultProps = {
-    bg: 'blue',
+    bg: 'gray',
     color: 'white',
     fontFamily: 'primary',
     fontSize: 'small',
