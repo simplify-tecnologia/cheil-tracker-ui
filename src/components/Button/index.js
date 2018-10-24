@@ -67,7 +67,7 @@ class Button extends React.Component {
   }
 
   render() {
-    const { icon, iconPosition, children, ...rest } = this.props;
+    const { icon, iconPosition, iconType, children, ...rest } = this.props;
     const EnhancedButton = rest.href ? StyledButton.withComponent('a') : StyledButton;
     const className = cx(
       'button',
@@ -76,7 +76,7 @@ class Button extends React.Component {
       rest.className
     );
 
-    let btnChildren = [icon && <Icon key={0} name={icon} />, children];
+    let btnChildren = [icon && <Icon key={0} name={icon} type={iconType} />, children];
 
     if (iconPosition === 'right') {
       btnChildren = lodash.reverse(btnChildren);
