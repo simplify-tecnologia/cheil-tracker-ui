@@ -14,21 +14,24 @@ import * from "cheil-tracker-ui/hocs";
 
 ### Documentaion
 
-https://happy-galileo-6a3141.netlify.com/
+https://cheil-tracker-ui-docz.netlify.com
 
 ## Components List
 
-- [x] Box
-- [ ] Button
+- [x] Avatar
+- [x] Badge
+- [x] Button
+- [x] Card
 - [ ] Checkbox
-- [ ] ChildrenProps
+- [x] ChildrenProps
 - [ ] DatePicker
 - [ ] Dropdown
+- [x] Flex
 - [ ] Field
-- [ ] Group
-- [ ] Icon
-- [ ] Input
-- [ ] Loader
+- [x] Group
+- [x] Icon
+- [x] Input
+- [x] Loader
 - [ ] Menu
 - [ ] Stack
 - [ ] Switch
