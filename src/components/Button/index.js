@@ -13,7 +13,7 @@ class Button extends React.Component {
   static displayName = 'Button';
 
   static defaultProps = {
-    color: null,
+    color: 'gray',
     bg: null,
     p: '0 1em',
     m: 0,

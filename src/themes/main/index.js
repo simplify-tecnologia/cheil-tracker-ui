@@ -156,6 +156,11 @@ theme.components.button = {
     borderColor: 'danger',
     bg: 'danger',
   },
+  gray: {
+    color: 'white',
+    borderColor: 'light',
+    bg: 'light',
+  },
   blue: {
     color: 'white',
     borderColor: 'blue',

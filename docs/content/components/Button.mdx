@@ -39,9 +39,9 @@ import { Button, ChildrenProps } from '../../../src/components';
 
 <Playground>
   <ChildrenProps mr={1} mb={1}>
+    <Button outlined>Normal</Button>
     <Button variant='success' outlined>Success</Button>
     <Button variant='danger' outlined>Danger</Button>
-    <Button variant='grey' outlined>Grayscale</Button>
     <Button color='white' bg='black' outlined>Black</Button>
   </ChildrenProps>
 </Playground>
@@ -56,5 +56,32 @@ import { Button, ChildrenProps } from '../../../src/components';
     <Button variant='danger' loading>Danger</Button>
     <Button bg='gray' color='white' loading>Grayscale</Button>
     <Button bg='black' color='white' loading>Black</Button>
+  </ChildrenProps>
+</Playground>
+
+## Different sizes
+
+<Playground>
+  <ChildrenProps mr={1} mb={1}>
+    <Button fontSize='tiny' variant='primary'>Tiny</Button>
+    <Button fontSize='small' variant='secondary'>Small</Button>
+    <Button fontSize='normal' variant='success'>Normal</Button>
+    <Button fontSize='medium' variant='danger'>Medium</Button>
+    <Button fontSize='large' variant='blue'>Large</Button>
+    <Button fontSize='xLarge' variant='turquoise' outlined>XLarge</Button>
+  </ChildrenProps>
+</Playground>
+
+## Button can hava a icon
+
+<Playground>
+  <ChildrenProps mr={1} mb={1}>
+    <Button variant='gray' outlined icon='cubes'>Cubes</Button>
+    <Button variant='primary' icon='star' iconPosition='right'>Primary</Button>
+    <Button variant='success' icon='rss'>Success</Button>
+    <Button variant='danger' icon='shopping-basket' outlined>Success</Button>
+    <Button variant='gray' icon='shield' />
+    <Button variant='gray' icon='shield' fontSize='tiny' />
+    <Button variant='gray' icon='times' fontSize='tiny' outlined />
   </ChildrenProps>
 </Playground>
