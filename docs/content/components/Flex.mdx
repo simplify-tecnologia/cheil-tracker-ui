@@ -1,0 +1,28 @@
+---
+name: Flex
+route: /components/flex
+menu: Components
+---
+import { Playground, PropsTable } from 'docz';
+import { Flex, Card, ChildrenProps } from '../../../src/components';
+
+# Flex
+
+## Properties
+
+<PropsTable of={Flex} />
+
+## Basic usage
+
+A Flex to contain other elements
+
+<Playground>
+    <Flex bg='gray' justifyContent='space-between'>
+      <ChildrenProps m={3}>
+        <Card>Some text in card</Card>
+        <Card>Some text in card</Card>
+        <Card>Some text in card</Card>
+        <Card>Some text in card</Card>
+      </ChildrenProps>
+    </Flex>
+</Playground>
