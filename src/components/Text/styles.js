@@ -30,6 +30,7 @@ export const StyledText = styled.p`
   ${p =>
     p.ellipsis &&
     css`
+      max-width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
