@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { fontFamily, fontSize, space, color, textAlign, display, style } from 'styled-system';
+import { fontFamily, fontSize, space, color, textAlign, display } from 'styled-system';
 
 export const StyledText = styled.p`
   font-weight: 400;
@@ -25,5 +25,11 @@ export const StyledText = styled.p`
     p.strong &&
     css`
       font-weight: 600;
+    `};
+
+  ${p =>
+    p.ellipsis &&
+    css`
+      text-overflow: ellipsis;
     `};
 `;
