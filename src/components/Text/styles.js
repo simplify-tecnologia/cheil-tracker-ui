@@ -30,6 +30,8 @@ export const StyledText = styled.p`
   ${p =>
     p.ellipsis &&
     css`
+      overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
     `};
 `;
