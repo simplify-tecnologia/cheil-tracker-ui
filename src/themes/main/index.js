@@ -171,6 +171,11 @@ theme.components.button = {
     borderColor: 'turquoise',
     bg: 'turquoise',
   },
+  switch: {
+    color: 'turquoise',
+    borderColor: 'white',
+    bg: 'white',
+  },
 };
 
 theme.components.input = {
