@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexbox, borders, themeColor } from 'cheil-tracker-ui/utils';
+import { flexbox, borders } from 'cheil-tracker-ui/utils';
 import {
   color,
   space,
@@ -21,11 +21,11 @@ const borderLeftColor = style({
 export const StyledCard = styled.div`
   display: flex;
   position: relative;
+  overflow: hidden;
 
   ${space}
   ${boxShadow}
   ${color}
-  ${themeColor}
   ${borders}
   ${borderLeftColor}
   ${textAlign}
