@@ -16,6 +16,7 @@ class Select extends React.Component {
     fontFamily: 'primary',
     fontSize: 'tiny',
     borderRadius: 2,
+    width: '100%',
   };
 
   static propTypes = {

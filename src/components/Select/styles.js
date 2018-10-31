@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontFamily, fontSize, color, space, borderRadius } from 'styled-system';
+import { fontFamily, fontSize, color, space, width, borderRadius } from 'styled-system';
 
 import Select from 'react-select';
 
@@ -8,18 +8,28 @@ export const StyledSelect = styled(Select)`
   ${fontSize};
   ${color};
   ${space};
+  ${width};
 
   .select__control {
     border: 0;
     box-shadow: ${props => props.theme.shadows.normal};
+    min-height: 32px;
 
     ${borderRadius};
+
+    .select__value-container {
+      padding: 1px 8px;
+    }
   }
 
   .select__indicator {
     &-separator {
       background-color: ${props => props.theme.colors.light};
     }
+  }
+
+  .select__dropdown-indicator {
+    padding: 6px;
   }
 
   .select__loading-indicator span {
