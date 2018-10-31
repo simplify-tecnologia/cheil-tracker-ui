@@ -6,7 +6,6 @@ import Select from 'react-select';
 export const StyledSelect = styled(Select)`
   ${fontFamily};
   ${fontSize};
-  ${color};
   ${space};
   ${width};
 
@@ -16,6 +15,7 @@ export const StyledSelect = styled(Select)`
     min-height: 32px;
 
     ${borderRadius};
+    ${color};
 
     .select__value-container {
       padding: 1px 8px;
@@ -37,9 +37,8 @@ export const StyledSelect = styled(Select)`
   }
 
   .select__menu {
-    background-color: ${props => props.theme.colors.white};
-
     ${borderRadius};
+    ${color};
   }
 
   .select__option {
