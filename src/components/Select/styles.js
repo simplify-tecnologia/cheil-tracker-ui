@@ -37,6 +37,8 @@ export const StyledSelect = styled(Select)`
   }
 
   .select__menu {
+    background-color: ${props => props.theme.colors.white};
+
     ${borderRadius};
   }
 
