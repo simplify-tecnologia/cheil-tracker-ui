@@ -15,7 +15,7 @@ class Button extends React.Component {
   static defaultProps = {
     color: 'gray',
     bg: null,
-    p: '0 1em',
+    p: '0 0.5714em',
     m: 0,
     border: 1,
     borderColor: 'gray',

@@ -23,13 +23,11 @@ export const StyledSelect = styled(Select)`
   }
 
   .select__indicator {
-    &-separator {
-      background-color: ${props => props.theme.colors.light};
-    }
+    padding: 6px;
   }
 
-  .select__dropdown-indicator {
-    padding: 6px;
+  .select__indicator-separator {
+    background-color: ${props => props.theme.colors.light};
   }
 
   .select__loading-indicator span {
