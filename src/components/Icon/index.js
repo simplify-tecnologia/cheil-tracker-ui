@@ -45,7 +45,7 @@ class Icon extends React.Component {
     /** Icon can formatted to appear circular. */
     circular: PropTypes.bool,
     /** An icon can have shadow. */
-    fontSize: PropTypes.number,
+    fontSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     type: PropTypes.string,
   };
