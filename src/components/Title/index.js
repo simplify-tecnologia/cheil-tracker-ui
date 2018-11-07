@@ -41,7 +41,7 @@ class Title extends React.Component {
     const Component = StyledTitle.withComponent(as);
 
     if (props.subtitle) {
-      props = { ...props, ...{ thin: true, fontSize: props.fontSize - 1 } };
+      props = { ...props, ...{ thin: true, fontSize: 'normal' } };
     }
 
     return (
