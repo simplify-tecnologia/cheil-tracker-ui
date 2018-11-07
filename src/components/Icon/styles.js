@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { color, size, fontSize } from 'styled-system';
+import { color, size, fontSize, borderRadius } from 'styled-system';
 
 const circular = p => {
   if (!p.circular) return;
@@ -20,5 +20,6 @@ export const StyledIcon = styled.i.attrs({
   ${color}
   ${size}
   ${fontSize}
+  ${borderRadius}
   ${circular}
 `;
