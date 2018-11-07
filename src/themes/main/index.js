@@ -132,6 +132,22 @@ theme.components.card = {
     borderLeft: '5px solid',
     borderLeftColor: 'red',
   },
+  info: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'info',
+  },
+  success: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'success',
+  },
+  warning: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'warning',
+  },
+  danger: {
+    borderLeft: '5px solid',
+    borderLeftColor: 'danger',
+  },
 };
 
 theme.components.button = {
