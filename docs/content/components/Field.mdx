@@ -1,0 +1,41 @@
+---
+name: Field
+route: /components/field
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz';
+import { Field, Card, Group, Button, Input } from '../../../src/components';
+
+# Field
+
+## Properties
+
+<PropsTable of={Field} />
+
+## Basic usage
+
+<Playground>
+  <Field label='Email:' required>
+    <Input fluid icon="envelope" placeholder='Type your username' />
+  </Field>
+
+  <Field label='Password:'>
+    <Input fluid icon="unlock" placeholder='Type your password' type='password' />
+  </Field>
+</Playground>
+
+Input with different size, color & icon:
+
+<Playground>
+  <Card bg="dark">
+    <Field label='Email:' color="gray" required>
+      <Input fluid variant='secondary' icon="envelope" placeholder='Type your username' />
+    </Field>
+
+    <Field label='Password:' color="gray">
+      <Input fluid variant='secondary' icon="unlock" placeholder='Type your password' type='password' />
+    </Field>
+
+  </Card>
+</Playground>

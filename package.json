@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "docz-theme-default": "^0.12.7",
+    "docz-theme-default": "^0.13.4",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.11",
     "polished": "^2.2.0",
@@ -46,7 +46,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "del-cli": "^1.1.0",
-    "docz": "^0.12.7",
+    "docz": "^0.13.4",
     "docz-plugin-netlify": "^1.1.4",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",

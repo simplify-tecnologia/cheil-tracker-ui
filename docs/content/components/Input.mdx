@@ -3,6 +3,7 @@ name: Input
 route: /components/input
 menu: Components
 ---
+
 import { Playground, PropsTable } from 'docz';
 import { Input, Card, ChildrenProps } from '../../../src/components';
 
@@ -18,12 +19,12 @@ Simple Input with different type:
 
 <Playground>
   <ChildrenProps my={2}>
-    <Input placeholder='Type your name' />
-    <Input placeholder='Type your password' type='password' />
+    <Input placeholder="Type your name" />
+    <Input placeholder="Type your password" type="password" />
   </ChildrenProps>
 </Playground>
 
-Imput with different size, color & icon:
+Input with different size, color & icon:
 
 <Playground>
   <ChildrenProps my={2}>
@@ -36,5 +37,6 @@ Imput with different size, color & icon:
     <Card bg='info' borderColor='info'>
       <Input icon='jedi' variant='secondary' placeholder='Search in The Force...' />
     </Card>
+
   </ChildrenProps>
 </Playground>
