@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { fluid } from 'cheil-tracker-ui/utils';
 import { fontFamily, fontSize, color, space, width, borderRadius } from 'styled-system';
 
 import Select from 'react-select';
@@ -7,6 +8,7 @@ export const StyledSelect = styled(Select)`
   ${fontFamily};
   ${fontSize};
   ${space};
+  ${fluid};
   ${width};
 
   .select__control {

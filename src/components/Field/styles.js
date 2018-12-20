@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, fontFamily, alignItems } from 'styled-system';
+import { color, fontFamily, alignItems, space } from 'styled-system';
 
 export const StyledField = styled.div`
   display: flex;
@@ -25,6 +25,7 @@ export const StyledField = styled.div`
     margin-bottom: 1rem;
   }
 
+  ${space};
   ${fontFamily};
   ${alignItems};
 `;
