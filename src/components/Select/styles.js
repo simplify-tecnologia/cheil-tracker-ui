@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { fluid } from 'cheil-tracker-ui/utils';
 import { fontFamily, fontSize, color, space, width, borderRadius } from 'styled-system';
 
@@ -13,11 +13,20 @@ export const StyledSelect = styled(Select)`
 
   .select__control {
     border: 0;
-    box-shadow: ${props => props.theme.shadows.normal};
-    min-height: 32px;
+    min-height: ${props => props.height}px;
 
     ${borderRadius};
     ${color};
+
+    ${props =>
+      props.shadow
+        ? css`
+            box-shadow: ${props.theme.shadows.normal};
+          `
+        : css`
+            box-shadow: none;
+            border: 1px solid ${props.theme.shadows.light};
+          `};
 
     .select__value-container {
       padding: 1px 8px;

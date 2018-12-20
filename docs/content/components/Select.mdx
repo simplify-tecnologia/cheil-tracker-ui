@@ -3,6 +3,7 @@ name: Select
 route: /components/select
 menu: Components
 ---
+
 import { Playground, PropsTable } from 'docz';
 import { Select, ChildrenProps } from '../../../src/components';
 import { flavourOptions } from '../data.js';
@@ -23,3 +24,8 @@ An Select to contain other elements
   </ChildrenProps>
 </Playground>
 
+<Playground>
+  <ChildrenProps mx={2}>
+    <Select options={flavourOptions} variant="primary" />
+  </ChildrenProps>
+</Playground>

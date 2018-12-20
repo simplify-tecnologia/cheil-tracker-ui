@@ -223,4 +223,11 @@ theme.components.input = {
 
 theme.components.icon = {};
 
+theme.components.select = {
+  primary: {
+    shadow: false,
+    height: 40,
+  },
+};
+
 export default theme;

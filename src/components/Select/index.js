@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { main } from 'cheil-tracker-ui/themes';
 import { compose } from 'recompose';
-import { withFallbackTheme } from 'cheil-tracker-ui/hocs';
+import { withFallbackTheme, withVariant } from 'cheil-tracker-ui/hocs';
 
 import { StyledSelect } from './styles';
 
@@ -17,6 +17,9 @@ class Select extends React.Component {
     fontSize: 'tiny',
     borderRadius: 2,
     width: '100%',
+    shadow: true,
+    height: 32,
+    variant: null,
   };
 
   static propTypes = {
@@ -32,4 +35,7 @@ class Select extends React.Component {
   }
 }
 
-export default compose(withFallbackTheme(main))(Select);
+export default compose(
+  withFallbackTheme(main),
+  withVariant('select')
+)(Select);
