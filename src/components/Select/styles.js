@@ -1,15 +1,33 @@
 import styled, { css } from 'styled-components';
 import { fluid } from 'cheil-tracker-ui/utils';
-import { fontFamily, fontSize, color, space, width, borderRadius } from 'styled-system';
+import {
+  fontFamily,
+  fontSize,
+  color,
+  space,
+  width,
+  borderRadius,
+  borderColor,
+} from 'styled-system';
 
 import Select from 'react-select';
 
+export const SelectContainer = styled.div`
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  ${space};
+  ${width};
+  ${fluid};
+`;
+
 export const StyledSelect = styled(Select)`
+  width: 100%;
+
   ${fontFamily};
   ${fontSize};
-  ${space};
-  ${fluid};
-  ${width};
 
   .select__control {
     border: 0;
@@ -18,15 +36,22 @@ export const StyledSelect = styled(Select)`
     ${borderRadius};
     ${color};
 
-    ${props =>
-      props.shadow
+    ${p =>
+      p.shadow
         ? css`
-            box-shadow: ${props.theme.shadows.normal};
+            box-shadow: ${p.theme.shadows.normal};
           `
         : css`
             box-shadow: none;
-            border: 1px solid ${props.theme.shadows.light};
+            border: 1px solid;
+            ${borderColor};
           `};
+
+    ${p =>
+      p.isValid &&
+      css`
+        border-color: ${p.theme.colors.danger};
+      `};
 
     .select__value-container {
       padding: 1px 8px;
@@ -38,11 +63,11 @@ export const StyledSelect = styled(Select)`
   }
 
   .select__indicator-separator {
-    background-color: ${props => props.theme.colors.light};
+    background-color: ${p => p.theme.colors.light};
   }
 
   .select__loading-indicator span {
-    background-color: ${props => props.theme.colors.light};
+    background-color: ${p => p.theme.colors.light};
   }
 
   .select__menu {
@@ -52,11 +77,24 @@ export const StyledSelect = styled(Select)`
 
   .select__option {
     &--is-focused {
-      background-color: ${props => props.theme.colors.g300};
+      background-color: ${p => p.theme.colors.g300};
     }
     &--is-selected {
-      background-color: ${props => props.theme.colors.grayDark};
-      color: ${props => props.theme.colors.white};
+      background-color: ${p => p.theme.colors.grayDark};
+      color: ${p => p.theme.colors.white};
     }
   }
+`;
+
+export const Helper = styled.span`
+  display: block;
+  margin-top: 0.25em;
+
+  ${fontSize};
+
+  ${p =>
+    p.isValid &&
+    css`
+      color: ${p.theme.colors.danger};
+    `};
 `;
