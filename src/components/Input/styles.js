@@ -23,6 +23,7 @@ export const InputContainer = styled.div`
   display: flex;
   position: relative;
   box-sizing: border-box;
+  flex-direction: column;
 
   & > .icon {
     position: absolute;
@@ -66,4 +67,23 @@ export const Input = styled.input`
   ${fontWeight};
   ${height};
   ${fluid};
+
+  ${p =>
+    p.isValid &&
+    css`
+      border-color: ${p.theme.colors.danger};
+    `};
+`;
+
+export const Helper = styled.span`
+  display: block;
+  margin-top: 0.25em;
+
+  ${fontSize};
+
+  ${p =>
+    p.isValid &&
+    css`
+      color: ${p.theme.colors.danger};
+    `};
 `;

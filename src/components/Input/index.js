@@ -36,6 +36,8 @@ class Input extends React.Component {
     iconType: 'regular',
     onEnter: null,
     onChange: null,
+    helperText: '',
+    isValid: false,
   };
 
   static propTypes = {
@@ -75,7 +77,7 @@ class Input extends React.Component {
   };
 
   render() {
-    const { onEnter, className, ...props } = this.props;
+    const { onEnter, className, helperText, ...props } = this.props;
     const cn = cx(`input`, className);
     let InputIcon = null;
 
@@ -102,6 +104,7 @@ class Input extends React.Component {
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDown}
         />
+        {helperText && <s.Helper {...props}>{helperText}</s.Helper>}
       </s.InputContainer>
     );
   }
