@@ -11,6 +11,7 @@ export const StyledAvatar = styled.div`
   font-weight: 600;
   justify-content: center;
   line-height: 1;
+  flex-shrink: 0;
 
   ${fontFamily};
   ${fontSize};
