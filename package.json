@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Cheil Tracker UI is a collection of React components styled using styled-components. Because uses styled-components you can easily create a new theme or change an existing one, see themes for more information.",
   "main": "lib/index.js",
-  "private": true,
   "scripts": {
     "prepare": "npm run build",
     "build": "babel src --out-dir lib",
