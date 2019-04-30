@@ -1,5 +1,5 @@
 {
-  "name": "cheil-tracker-ui",
+  "name": "@simplify-tecnologia/cheil-tracker-ui",
   "version": "0.0.1",
   "description": "Cheil Tracker UI is a collection of React components styled using styled-components. Because uses styled-components you can easily create a new theme or change an existing one, see themes for more information.",
   "main": "lib/index.js",
